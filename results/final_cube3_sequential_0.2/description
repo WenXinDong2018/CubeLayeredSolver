@@ -1,0 +1,10 @@
+sequential model using cube3_layer3_baseline(20k) as layer 3 agent
+batch size 100
+weight 0.2
+
+solved 100 problems
+average time is 4.478437569141388 s
+average node generated is 115757.28
+average solution length  is 44.74
+layer 1 solving rate 100
+layer 2 solving rate 100
