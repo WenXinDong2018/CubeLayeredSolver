@@ -2,9 +2,9 @@
 
 This is a Stanford CS299 final project.
 
-We solve a 3*3*3 rubik's cube layer by layer using value iteration and multihead training. 
+We solve a 3by3by3 rubik's cube layer by layer using value iteration and multihead training. 
 
-There are two components in this project: training, and searching. We train a value function that output a length 3 vector, which predicts the cost-to-go values for completing the first, first two, and all three layers. Then, using this value function as the heuristic function, we apply DeepCubeA's Batch weighted A* search to find the solution path. We first find the path from the initial cube state to completing the first layer, and from there to a state that completes the first two layers, and finially to a state that completes the cube. We achieve 100% solving rate just like the DeepCubeA authors, and a average solving time of 4.5s with 1 GPU. 
+There are two components in this project: training, and searching. We train a value function that output a length 3 vector, which predicts the cost-to-go values for completing the first, first two, and all three layers separately. Then, using this value function as the heuristic function, we apply DeepCubeA's Batch weighted A* search to find the solution path. We first find the path from the initial cube state to completing the first layer, and from there to a state that completes the first two layers, and finially to a state that completes the cube. We achieve 100% solving rate just like the DeepCubeA authors, and a average solving time of 4.5s with 1 GPU. 
 
 This repository is adapted from [DeepCubeA](https://www.ics.uci.edu/~fagostin/assets/files/SolvingTheRubiksCubeWithDeepReinforcementLearningAndSearch_Final.pdf).
 
